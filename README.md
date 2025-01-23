@@ -3,8 +3,8 @@ The Tips Calculator app is a simple Android application that allows users to cal
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
-<img src="https://github.com/MateusLand/BMICalculator/assets/77392394/ab05187f-e512-49ae-90dd-6ce344ce97e5" width=300/> 
-<img src="https://github.com/MateusLand/BMICalculator/assets/77392394/8e56b7ac-aa6f-45fe-bfc1-9b6ea4c30771" width=300/>
+<img src="https://github.com/MateusLand/TipsCalculator/blob/facca152ca02ec4c5369538c98b10077de35067a/screenshot1.png" width=300/>
+<img src="https://github.com/MateusLand/TipsCalculator/blob/facca152ca02ec4c5369538c98b10077de35067a/screenshot2.png" width=300/>
 
 ## Features
 - Calculate the total amount of a bill, including tips Split the total amount among a group of people.
