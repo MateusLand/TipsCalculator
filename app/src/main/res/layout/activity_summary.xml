@@ -48,7 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="16dp"
-        android:text="Total Table: €"
+        android:text="Total Table:"
         android:textSize="24sp"
         app:layout_constraintEnd_toStartOf="@+id/ver_guideline_sum_middle"
         app:layout_constraintTop_toBottomOf="@+id/tv_sum_subtitle" />
@@ -124,7 +124,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
-        android:text="Total Bill: €"
+        android:text="Total Bill:"
         android:textSize="32sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"

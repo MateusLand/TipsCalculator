@@ -19,10 +19,10 @@ class SummaryActivity : AppCompatActivity() {
         val totalAmount = intent.getFloatExtra("totalAmount", 0.0f)
 
 
-        binding.tvSumBillAmount.text = totalTable.toString()
-        binding.tvSumTotalBill.text = totalAmount.toString()
+        binding.tvSumBillAmount.text = "€" + totalTable.toString()
+        binding.tvSumTotalBill.text = "€" + totalAmount.toString()
         binding.tvSumNumPeople.text = numPeople.toString()
-        binding.tvSumPercentageAmount.text = percentage.toString()
+        binding.tvSumPercentageAmount.text = percentage.toString() + "%"
 
         binding.btnSumRecalculate.setOnClickListener {
             finish()

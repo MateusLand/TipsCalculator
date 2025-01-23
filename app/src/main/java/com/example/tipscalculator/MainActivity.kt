@@ -15,36 +15,22 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        var percentage: Int = 0
-
-        binding.rbOptOne.setOnCheckedChangeListener { _, isChecked ->
-            if (isChecked) {
-                percentage = 10
-            }
-        }
-
-        binding.rbOptTwo.setOnCheckedChangeListener { _, isChecked ->
-            if (isChecked) {
-                percentage = 15
-            }
-        }
-
-        binding.rbOptThree.setOnCheckedChangeListener { _, isChecked ->
-            if (isChecked) {
-                percentage = 20
-            }
-        }
-
         binding.btnCalculate.setOnClickListener {
             val totalTableTemp = binding.tieTotal.text
             val numPeopleTemp = binding.tieNumPeople.text
+            val percentageTemp = binding.tieTipPercentage.text
 
-            if (totalTableTemp?.isEmpty() == true || numPeopleTemp?.isEmpty() == true) {
+            if (totalTableTemp?.isEmpty() == true ||
+                numPeopleTemp?.isEmpty() == true ||
+                percentageTemp?.isEmpty() == true
+                )
+                    {
                 Snackbar.make(binding.tieTotal, "Please fill all the fields", Snackbar.LENGTH_LONG)
                     .show()
             } else {
-                val totalTable: Float = binding.tieTotal.text.toString().toFloat()
-                val nPeople: Int = binding.tieNumPeople.text.toString().toInt()
+                val totalTable = binding.tieTotal.text.toString().toFloat()
+                val nPeople = numPeopleTemp.toString().toInt()
+                val percentage = percentageTemp.toString().toInt()
 
                 val totalTemp = totalTable / nPeople
                 val tips = totalTemp * percentage / 100
@@ -71,8 +57,6 @@ class MainActivity : AppCompatActivity() {
     private fun clean() {
         binding.tieTotal.setText("")
         binding.tieNumPeople.setText("")
-        binding.rbOptOne.isChecked = false
-        binding.rbOptTwo.isChecked = false
-        binding.rbOptThree.isChecked = false
+        binding.tieTipPercentage.setText("")
     }
 }
